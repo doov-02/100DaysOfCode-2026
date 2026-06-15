@@ -1,15 +1,8 @@
-#include <stdio.h>
-int main(){
-    int n, i;
-    scanf("%d", &n);
-    int arr[n];
-    int sum = 0;
-    for(i = 0; i < n; i++){
-        scanf("%d", &arr[i]);
-        sum += arr[i];
+int missingNumber(int* nums, int numsSize) {
+    int expectedSum = numsSize * (numsSize + 1) / 2;
+    int actualSum = 0;
+    for (int i = 0; i < numsSize; i++) {
+        actualSum += nums[i];
     }
-    int expectedSum = n * (n + 1) / 2;
-    int missing = expectedSum - sum;
-    printf("%d\n", missing);
-    return 0;
+    return expectedSum - actualSum;
 }
