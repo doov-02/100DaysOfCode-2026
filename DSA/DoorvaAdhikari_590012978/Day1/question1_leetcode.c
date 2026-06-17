@@ -5,8 +5,4 @@ int missingNumber(int* nums, int numsSize) {
         actualSum += nums[i];
     }
     return expectedSum - actualSum;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 472a0d0a7fac175fc32377a5f72c41fca5f2526b
